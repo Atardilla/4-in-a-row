@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>4 in a row game</title>
+
+    <link rel="stylesheet" href="style/ErinMeyerCssReset.css">
+    <link rel="stylesheet" href="style/index.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet"> 
+
+
+
+    <!--FONT AWESOME   this is for the "rock, paper and scissors" icons-->
+    <script src="https://kit.fontawesome.com/022c62a2f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
+    <header class='header'>
+        <h2 class='h2'>PAPER <br> ROCK <br> SCISSORS</h2>
+    </header>
+
+
+
+
+
+    <main class='main'>
+            
+        <div class="battleground">
+            <div class='battleground-side'>
+                <div class="name">
+                    <p>Player: </p><p class='red'>Human</p>
+                </div>
+                <div class="options">
+                    <button class='rock-button'><i class="far fa-hand-rock"></i></button>
+                    <button class='paper-button'><i class="far fa-hand-paper"></i></button>
+                    <button class='scissors-button'><i class="far fa-hand-scissors"></i></button>
+                </div>
+            </div>
+
+            <div class="battleground-side">
+                <div class="name">
+                    <p>Player: </p><p class='red'>Evil Computer</p>
+                </div>
+                <div class="options">
+                    <button class='rock-button pc'><i class="far fa-hand-rock"></i></button>
+                    <button class='paper-button pc'><i class="far fa-hand-paper"></i></button>
+                    <button class='scissors-button pc'><i class="far fa-hand-scissors"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+
+    <footer class='footer'>
+        <div class="scores">
+            <div class="name">
+                <p>Player: </p><p class='red'>Human</p>
+            </div>
+        </div>
+        <div class="scores">
+            <div class="name">
+                <p>Player: </p><p class='red'>Evil Computer</p>
+            </div>
+        </div>
+
+       
+    </footer>
+    <div class='created-by'><a href='https://github.com/Atardilla'>created by Atardilla</a></div>
+    <div class='created-by'><a href='https://www.freepik.com/vectors/background'>Background vector created by Layerace - www.freepik.com</a></div>
 </body>
 </html>

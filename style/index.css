@@ -1,0 +1,210 @@
+body {
+  width: 98vw;
+  height: 99vh;
+  background: url(../images/preview.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+}
+
+body .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30vw;
+  height: 2vh;
+  padding: 3px;
+  background: #B2DBBF;
+  border: 3px solid #F3FFBD;
+  border-radius: 17px;
+}
+
+body .name p {
+  font-family: "VT323";
+  color: #247BA0;
+}
+
+body .name .red {
+  color: #000000;
+}
+
+body .header {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+  padding-bottom: 45px;
+  height: 17vh;
+  background: url(../images/header-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header h2 {
+  font-family: "Press Start 2P";
+  color: #247BA0;
+  font-size: 2vh;
+  text-shadow: -1px 0 #F3FFBD, 0 1px #F3FFBD, 1px 0 #F3FFBD, 0 -1px #F3FFBD;
+  line-height: 120%;
+}
+
+body main {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+}
+
+body main .battleground {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body main .battleground .battleground-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5vh 60px;
+}
+
+body main .battleground .battleground-side .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .battleground .battleground-side .options button {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  margin: 2vh;
+  background: #247BA0;
+  color: #F3FFBD;
+  border: 1vh solid #F3FFBD;
+}
+
+body main .battleground .battleground-side .options button i {
+  font-size: xx-large;
+}
+
+body main .battleground .battleground-side .options button:hover {
+  cursor: pointer;
+}
+
+body main .battleground .battleground-side .options .pc:hover {
+  cursor: default;
+}
+
+body .footer {
+  width: 100%;
+  max-width: 850px;
+  margin: auto;
+  font-family: "VT323";
+  color: #F3FFBD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .footer .scores {
+  margin: 1vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .footer .scores .name {
+  max-width: 150px;
+}
+
+body .created-by {
+  font-family: "Oswald";
+  font-size: x-small;
+  color: #F3FFBD;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-end;
+}
+
+body .created-by a {
+  text-decoration: none;
+  color: #F3FFBD;
+}
+
+body .created-by a:hover {
+  font-size: xxx-large;
+  color: #FF1654;
+}
+
+@media screen and (orientation: landscape) {
+  body .header {
+    padding-bottom: 15vh;
+  }
+  body .header h2 {
+    font-size: 3vh;
+  }
+  body main .battleground .battleground-side {
+    margin: 5vh 60px;
+  }
+  body main .battleground .battleground-side .options {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body main .battleground .battleground-side .options button {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */
