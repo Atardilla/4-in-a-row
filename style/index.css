@@ -121,7 +121,7 @@ body main .battleground .battleground-side .options button {
 }
 
 body main .battleground .battleground-side .options button i {
-  font-size: xx-large;
+  font-size: 5vh;
 }
 
 body main .battleground .battleground-side .options button:hover {
@@ -205,6 +205,9 @@ body .created-by a:hover {
   body main .battleground .battleground-side .options button {
     width: 10vw;
     height: 10vw;
+  }
+  body main .battleground .battleground-side .options button i {
+    font-size: 5vw;
   }
 }
 /*# sourceMappingURL=index.css.map */
