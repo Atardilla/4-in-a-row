@@ -124,8 +124,12 @@ body main .battleground .battleground-side .options button i {
   font-size: 5vh;
 }
 
-body main .battleground .battleground-side .options button:hover {
+body main .battleground .battleground-side .options .human:hover {
   cursor: pointer;
+  border: 0.7vh solid #F3FFBD;
+  -webkit-box-shadow: 0 0 10px #F3FFBD;
+          box-shadow: 0 0 10px #F3FFBD;
+  color: #FBFF22;
 }
 
 body main .battleground .battleground-side .options .pc:hover {
