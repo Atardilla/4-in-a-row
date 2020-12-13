@@ -1,1 +1,1 @@
-# 4-in-a-row
+# is actually rock paper scissors project for the odin project
