@@ -33,14 +33,16 @@ function playOneRound (playerSelection, computerSelection){
     
     if (playerSelection === computerSelection){
         result = `It's a draw! ${playerSelection} vs ${computerSelection} are the same`;
-
+        alert (result);
     } else if (playerSelection == 'rock' && computerSelection == 'scissors' 
     || playerSelection == 'paper' && computerSelection == 'rock' 
     || playerSelection == 'scissors' && computerSelection == 'paper') {
         result = `Player chooses ${playerSelection}. Computer chooses ${computerSelection}. PLAYER WIN THIS ROUND!`;
+        alert (result);
         playerPoints = playerPoints + 1;
     } else {
         result = `Player chooses ${playerSelection}. Computer chooses ${computerSelection}. COMPUTER WIN THIS ROUND!`;
+        alert (result);
         computerPoints = computerPoints + 1;
     }
     return result;
@@ -56,38 +58,45 @@ function game (){
     playerSelection = prompt('Select your move for this round', 'rock, paper or scissors?')
     
     console.log(playOneRound(playerSelection, computerPlay()) + `Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
-
+    alert(`Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
     //ROUND TWO
     
     playerSelection = prompt('Select your move for this round', 'rock, paper or scissors?')
    
     console.log(playOneRound(playerSelection, computerPlay()) + `Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
-
+    alert(`Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
     //ROUND THREE
 
     playerSelection = prompt('Select your move for this round', 'rock, paper or scissors?')
    
     console.log(playOneRound(playerSelection, computerPlay()) + `Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
-
+    alert(`Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
     //ROUND FOUR
     
     playerSelection = prompt('Select your move for this round', 'rock, paper or scissors?')
 
     console.log(playOneRound(playerSelection, computerPlay()) + `Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
-
+    alert(`Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
     //ROUND FIVE
 
     playerSelection = prompt('Select your move for this round', 'rock, paper or scissors?')
 
     console.log(playOneRound(playerSelection, computerPlay()) + `Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
+    alert(`Payer points: ${playerPoints}, Computer points: ${computerPoints}`);
 
     //Console log the winner of the game
     if (playerPoints > computerPoints){
         finalResult = `Player wins this game with ${playerPoints} points vs computer with ${computerPoints}`;
         console.log(finalResult);
-    } else {
+        alert(finalResult);
+    } else if (playerPoints < computerPoints) {
         finalResult = `Computer wins this game with ${computerPoints} points vs player with ${playerPoints}`;
         console.log(finalResult);
+        alert(finalResult);
+    } else {
+        finalResult = `No one loses! Both Player and Computer has ${playerPoints}`;
+        console.log(finalResult);
+        alert(finalResult);
     }
 
 }
