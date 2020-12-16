@@ -44,8 +44,7 @@ function playOneRound (playerSelection, computerSelection){
     const showComputerPoints = document.createElement('div');
     showPlayerPoints.style.cssText = 'width: 3vw; margin: 2px;';
     showComputerPoints.style.cssText = 'width: 3vw; margin: 2px;';
-
-    const showRoundWinner = document.createElement('div');
+    const message = document.querySelector('.message');
 
     
     playerSelection.toUpperCase();
@@ -60,8 +59,8 @@ function playOneRound (playerSelection, computerSelection){
 
     
         if (playerSelection === computerSelection){
-            result = `It's a draw! ${playerSelection} vs ${computerSelection} are the same`;
-            alert (result);
+            message.textContent=`It's a draw! ${playerSelection} vs ${computerSelection} are the same`;
+            
 
         } else if (playerSelection == 'rock' && computerSelection == 'scissors' 
         || playerSelection == 'paper' && computerSelection == 'rock' 
@@ -69,7 +68,7 @@ function playOneRound (playerSelection, computerSelection){
             playerPoints = playerPoints + 1;
             
             if (playerPoints >4){
-                 alert(`PLAYER WINS THE GAME!`)
+                message.textContent=`PLAYER WINS THE GAME!`;
                 playerPoints = 0;
                 computerPoints = 0;
                 showPlayerPoints.innerHTML = '<i class="fas fa-check-circle"></i>';
@@ -77,7 +76,7 @@ function playOneRound (playerSelection, computerSelection){
                 location.reload();
 
             } else {
-            alert (`Player chooses ${playerSelection}. Computer chooses ${computerSelection}. PLAYER WIN THIS ROUND!`);
+                message.textContent=`Player chooses ${playerSelection}. Computer chooses ${computerSelection}. PLAYER WIN THIS ROUND!`;
             showPlayerPoints.innerHTML = '<i class="fas fa-check-circle"></i>';
             playerScores.appendChild(showPlayerPoints);
 
@@ -87,7 +86,7 @@ function playOneRound (playerSelection, computerSelection){
         } else {
             computerPoints = computerPoints + 1;
              if (computerPoints >4){
-                alert(`COMPUTER WINS THE GAME!`)
+                message.textContent=`COMPUTER WINS THE GAME!`;
                 playerPoints = 0;
                 computerPoints = 0;
                 showComputerPoints.innerHTML = '<i class="fas fa-check-circle"></i>';
@@ -96,7 +95,7 @@ function playOneRound (playerSelection, computerSelection){
             } else {
             
             
-            alert (`Player chooses ${playerSelection}. Computer chooses ${computerSelection}. COMPUTER WIN THIS ROUND!`);
+                message.textContent=`Player chooses ${playerSelection}. Computer chooses ${computerSelection}. COMPUTER WIN THIS ROUND!`;
             
             
             showComputerPoints.innerHTML = '<i class="fas fa-check-circle"></i>';
