@@ -110,9 +110,18 @@ body main .battleground .battleground-side .options {
           flex-direction: column;
 }
 
-body main .battleground .battleground-side .options button {
+body main .battleground .battleground-side .options button, body main .battleground .battleground-side .options .pc {
   width: 20vw;
   height: 20vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 50%;
   margin: 2vh;
   background: #247BA0;
@@ -120,11 +129,11 @@ body main .battleground .battleground-side .options button {
   border: 1vh solid #F3FFBD;
 }
 
-body main .battleground .battleground-side .options button i {
+body main .battleground .battleground-side .options button i, body main .battleground .battleground-side .options .pc i {
   font-size: 5vh;
 }
 
-body main .battleground .battleground-side .options .human:hover {
+body main .battleground .battleground-side .options button:hover {
   cursor: pointer;
   border: 0.7vh solid #F3FFBD;
   -webkit-box-shadow: 0 0 10px #F3FFBD;
@@ -206,11 +215,20 @@ body .created-by a:hover {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  body main .battleground .battleground-side .options button {
+  body main .battleground .battleground-side .options button, body main .battleground .battleground-side .options .pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 10vw;
     height: 10vw;
   }
-  body main .battleground .battleground-side .options button i {
+  body main .battleground .battleground-side .options button i, body main .battleground .battleground-side .options .pc i {
     font-size: 5vw;
   }
 }
